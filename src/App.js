@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Todo from "./component/app/Todo";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import TodoLogin from "./component/login/TodoLogin";
+import TodoRegister from "./component/login/TodoRegister";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+
+        <BrowserRouter>
+            <Routes>
+               <Route path="/" element={<Todo/>}/>
+                <Route path="/login" element={<TodoLogin/>}/>
+                <Route path="/register" element={<TodoRegister/>}/>
+                <Route path="*" element={<p className="text-8xl text-red-600 flex items-center justify-center h-screen">404 Not Found</p>}/>
+            </Routes>
+        </BrowserRouter>
+
+
+    );
 }
 
 export default App;
