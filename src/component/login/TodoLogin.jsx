@@ -1,6 +1,6 @@
-import sam from '../../img/sam.png'
-import {Link} from "react-router-dom";
-import Nav from "../nav/Nav";
+import sam from "../assets/sam.png";
+import Kullanici from "../kullanici.json"
+
 
 const TodoLogin = () => {
     return (

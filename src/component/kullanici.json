@@ -1,0 +1,18 @@
+{
+  "kullanicilar": [
+    {
+      "id": 1,
+      "name": "sametkızgın@gmail.com",
+      "sifre": "otuzbir"
+    },
+    {
+      "id": 2,
+      "name": "ahmed@gmail.com",
+      "sifre": "otuzbir"
+    }
+  ],
+  "yetkiler": [
+    "Yönetici",
+    "Kullanici"
+  ]
+}
